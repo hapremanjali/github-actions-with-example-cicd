@@ -19,7 +19,10 @@ permissions:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: ${{matrix.os}}
+    stratergy:[ubuntu-latest,windows-latest,macOS-Latest]
+    matrix:
+    os:
 
     steps:
     - uses: actions/checkout@v3
