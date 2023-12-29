@@ -36,6 +36,4 @@ jobs:
       with:
         arguments: build
 
-  publish:
-
-    needs: build
+  
